@@ -1,0 +1,10 @@
+{
+    "/api": {
+        "target": "https://julesmyflixdb.herokuapp.com",
+        "secure": false,
+        "pathRewrite": {
+            "^/api": ""
+        },
+        "changeOrigin": true
+    }
+}
