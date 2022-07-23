@@ -7,6 +7,7 @@ import { Router } from "@angular/router"
 @Component({
     selector: "app-user-login-form",
     templateUrl: "./user-login-form.component.html",
+    styleUrls: ["./user-login-form.component.scss"],
 })
 export class UserLoginFormComponent implements OnInit {
     @Input() userData = { Username: "", Password: "" }
@@ -20,9 +21,8 @@ export class UserLoginFormComponent implements OnInit {
 
     ngOnInit(): void {}
 
-    /**
-     * sending form inputs for user login to backend via fetchApiData Service
-     */
+    // Sends form inputs for user login to backend via fetchApiData Service
+
     loginUser(): void {
         this.fetchApiData.userLogin(this.userData).subscribe(
             (result) => {

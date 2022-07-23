@@ -1,8 +1,10 @@
 <mat-card>
     <mat-card-header>
-        <mat-card-title>Login</mat-card-title>
+        <mat-card-title class="login-dialog-title"
+            >Login into your account</mat-card-title
+        >
     </mat-card-header>
-    <mat-card-content>
+    <mat-card-content class="login-dialog-content">
         <form>
             <mat-form-field>
                 <input
@@ -26,7 +28,9 @@
             </mat-form-field>
         </form>
     </mat-card-content>
-    <mat-card-actions>
-        <button mat-raised-button (click)="loginUser()">Login</button>
+    <mat-card-actions class="login-actions">
+        <button mat-raised-button (click)="loginUser()" color="primary">
+            Login
+        </button>
     </mat-card-actions>
 </mat-card>

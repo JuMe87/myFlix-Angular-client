@@ -10,7 +10,9 @@ describe("UserLoginFormComponent", () => {
         await TestBed.configureTestingModule({
             declarations: [UserLoginFormComponent],
         }).compileComponents()
+    })
 
+    beforeEach(() => {
         fixture = TestBed.createComponent(UserLoginFormComponent)
         component = fixture.componentInstance
         fixture.detectChanges()
