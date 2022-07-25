@@ -1,0 +1,27 @@
+$backgroundColor: #f6f4fa;
+$cardColor: #ddd8ed;
+$textColor: #003d66;
+$boxShadowColor: #c7bee1;
+$buttonColor: #001f33;
+
+.signup-dialog {
+    background-color: $cardColor;
+    margin-top: 0px;
+    box-shadow: none;
+}
+
+.signup-dialog-title {
+    color: $textColor;
+}
+
+.signup-dialog-content {
+    color: $textColor;
+}
+
+::ng-deep .signup-custom > mat-dialog-container {
+    background-color: $cardColor;
+}
+
+.signup-actions {
+    display: flex;
+}

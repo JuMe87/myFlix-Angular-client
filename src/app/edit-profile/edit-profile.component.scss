@@ -1,0 +1,52 @@
+$backgroundColor: #f6f4fa;
+$cardColor: #ddd8ed;
+$textColor: #003d66;
+$boxShadowColor: #c7bee1;
+$buttonColor: #001f33;
+
+.edit-profile-dialog {
+    background-color: $cardColor;
+    margin-top: 0px;
+    box-shadow: none;
+}
+
+.edit-profile-dialog-title {
+    color: $textColor;
+}
+
+.edit-user-card > mat-card-header {
+    display: flex;
+    justify-content: center;
+}
+
+.edit-profile-dialog-content {
+    color: $textColor;
+}
+
+::ng-deep .edit-profile-custom > mat-dialog-container {
+    background-color: $cardColor;
+}
+
+::ng-deep .mat-focused .mat-form-field-label {
+    /*change color of label*/
+    color: $textColor !important;
+}
+
+::ng-deep.mat-form-field-underline {
+    /*change color of underline*/
+    background-color: $textColor !important;
+}
+
+::ng-deep.mat-form-field-ripple {
+    /*change color of underline when focused*/
+    background-color: $textColor !important;
+}
+
+.edit-profile-actions {
+    display: flex;
+}
+
+.edit-user-button {
+    background-color: $buttonColor;
+    float: right;
+}

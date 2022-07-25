@@ -6,7 +6,7 @@
     </mat-card-header>
     <mat-card-content class="edit-profile-dialog-content">
         <form>
-            <mat-form-field>
+            <mat-form-field style="margin-right: 10px">
                 <input
                     matInput
                     [(ngModel)]="userData.Username"
@@ -48,6 +48,7 @@
         <button mat-raised-button (click)="editUser()" color="primary">
             Update your details
         </button>
+
         <button
             mat-stroked-button
             aria-label="Close the edit profile button"

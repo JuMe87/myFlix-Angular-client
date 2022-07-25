@@ -1,0 +1,27 @@
+$backgroundColor: #f6f4fa;
+$cardColor: #ddd8ed;
+$textColor: #003d66;
+$boxShadowColor: #c7bee1;
+$buttonColor: #001f33;
+
+.login-dialog {
+    background-color: $cardColor;
+    margin-top: 0px;
+    box-shadow: none;
+}
+
+.login-dialog-title {
+    color: $textColor;
+}
+
+.login-dialog-content {
+    color: $textColor;
+}
+
+::ng-deep .login-custom > mat-dialog-container {
+    background-color: $cardColor;
+}
+
+.login-actions {
+    display: flex;
+}
