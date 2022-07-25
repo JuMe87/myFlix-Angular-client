@@ -4,8 +4,8 @@ import {
     HttpHeaders,
     HttpErrorResponse,
 } from "@angular/common/http"
-import { Observable, throwError, catchError } from "rxjs"
-import { map } from "rxjs/operators"
+import { Observable, throwError } from "rxjs"
+import { catchError, map } from "rxjs/operators"
 
 //Declaring the Api url that will provide data for the client app
 const apiUrl = "https://julesmyflixdb.herokuapp.com/"
@@ -32,7 +32,7 @@ export class FetchApiDataService {
             .pipe(catchError(this.handleError))
     }
 
-    // Calls Api endpoint to login an existing user
+    // Calls Api endpoint to log-in an existing user
 
     public userLogin(userDetails: any): Observable<any> {
         return this.http
@@ -130,14 +130,14 @@ export class FetchApiDataService {
 
     // Calls Api endpoint to add a movie to the user's list of favorite movies
 
-    public addFavoriteMovie(id: any): Observable<any> {
+    public addFavoriteMovie(movieID: any): Observable<any> {
         // Get Authorization token stored in local storage
         const token = localStorage.getItem("token")
         // Get Username stored in local storage
         const username = localStorage.getItem("user")
         return this.http
             .post(
-                apiUrl + `users/${username}/movies/${id}`,
+                apiUrl + `users/${username}/movies/${movieID}`,
                 {},
                 {
                     headers: new HttpHeaders({
