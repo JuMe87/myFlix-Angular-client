@@ -217,4 +217,4 @@ Run `ng deploy --base-href=/myFlix-Angular-client/`
 
 ![Screenshot of Login View](./assets/Screenshot_LoginView.png?raw=true "Login")
 ![Screenshot of Movie View](./assets/Screenshot_Movie%20View.png?raw=true "Moview View")
-![Screenshot of Profile View](./assets/Screenshot_ProfileView.png.png?raw=true "Profile View")
+![Screenshot of Profile View](./assets/Screenshot_ProfileView.png?raw=true "Profile View")
