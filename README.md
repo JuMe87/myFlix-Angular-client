@@ -70,23 +70,21 @@ ng serve --open
 
 ### Set up app to load data from movie API
 
-1. Set up Angular HttpClient
-   1.1. Go to app.module.ts and add
+1. Set up Angular HttpClient by going to app.module.ts and adding
 
 ```bash
 import { HttpClientModule } from '@angular/common/http';
 ```
 
-1.2. Add HttpClientModule to the imports of @NgModule
+2. Add HttpClientModule to the imports of @NgModule
 
-2. Create Angular Service for Consuming REST API
-   2.1 Create a new Service inside app folder
+3. Create Angular Service for Consuming REST API by creating a new Service inside app folder
 
 ```bash
 ng generate service fetch-api-data
 ```
 
-2.2. Add import statements to fetch-api-data.service.ts file
+4. Add import statements to fetch-api-data.service.ts file
 
 ```bash
 import { catchError } from 'rxjs/internal/operators';
@@ -95,7 +93,7 @@ import { Observable, throwError } from 'rxjs';
 import { map } from 'rxjs/operators';
 ```
 
-3. Implement services logic to make API calls
+5. Implement services logic to make API calls
 
 -   User registration
 -   User login
@@ -124,13 +122,13 @@ $ ng add @angular/material
 
 ### Create components for user to use application
 
-Using the command:
+1. Using the command:
 
 ```bash
 $ ng generate component my-component-name
 ```
 
-Structure of components:
+2. Structure of components:
 
 -   Welcome screen
     -   User registration form (sign-up)
