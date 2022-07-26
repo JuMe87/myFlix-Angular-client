@@ -1,8 +1,19 @@
 # Achievement 6 Project: Angular App (myFlix) - MyFlixAngularClient
 
+## Table of Contents
+
+-   [Objective](#Objective)
+-   [Features and Requirements](#Features-and-Requirements)
+-   [Technical Requirements](#Technical-Requirements)
+-   [Setup](#setup)
+-   [Useful commands](#useful-commands)
+-   [Screenshots](#screenshots)
+
+## Objective
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.6. The objective of this project was as follows: Using Angular, build the client-side for an application called myFlix based on its existing server-side code (REST API and database), with supporting documentation.
 
-## Design Criteria
+## Features and Requirements
 
 ### User Stories
 
@@ -17,12 +28,6 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
     -   A button that when clicked takes a user to the director view, where details about the director of that particular movie will be displayed.
     -   A button that when clicked takes a user to the genre view, where details about that particular genre of the movie will be displayed.
 
-### Screenshot of app
-
-![Screenshot of Login View](./assets/Screenshot_LoginView.png?raw=true "Login")
-![Screenshot of Movie View](./assets/Screenshot_Movie%20View.png?raw=true "Moview View")
-![Screenshot of Profile View](./assets/Screenshot_ProfileView.png.png?raw=true "Profile View")
-
 ## Technical Requirements
 
 -   The application must be written in Angular (version 9 or later)
@@ -33,7 +38,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 -   The project must contain technical documentation using JSDoc
 -   The project must be hosted on GitHub Pages
 
-## Steps taken to set up app
+## Setup
 
 ### Install Angular
 
@@ -190,7 +195,7 @@ npm install typedoc
 npx typedoc --entryPointStrategy expand ./src
 ```
 
-## Once project is developed, adhere to the following steps to get it running
+## Useful commands
 
 ### Development server
 
@@ -207,3 +212,9 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 ### Deploy to gh-pages
 
 Run `ng deploy --base-href=/myFlix-Angular-client/`
+
+## Screenshots
+
+![Screenshot of Login View](./assets/Screenshot_LoginView.png?raw=true "Login")
+![Screenshot of Movie View](./assets/Screenshot_Movie%20View.png?raw=true "Moview View")
+![Screenshot of Profile View](./assets/Screenshot_ProfileView.png.png?raw=true "Profile View")
